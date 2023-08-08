@@ -1,0 +1,82 @@
+.js [data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .js [data-menu="button"] {
+    display: flex;
+
+    background: $brown-low;
+    padding: 0.5rem 1rem;
+
+    border: none;
+    border-radius: 4px;
+
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    color: #fff;
+
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    position: relative;
+  }
+
+  .js [data-menu="button"]::before {
+    /*  estou criando 1 das linhas usando o before e as outra 2 linhas estou usando uma sombra */
+
+    margin-right: 4px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+
+    transition: transform 0.3s; /*para animacao de rotacao do botao */
+  }
+
+  .js [data-menu="button"].open::before {
+    /* quero que os 3 pontos rodem  */
+    transform: rotate(90deg);
+  }
+
+  // falando com meu ul list
+  .js [data-menu="list-ul"] {
+    /* menu lista cada item  */
+
+    display: none;
+    position: absolute;
+    background: $brown-low;
+    border-radius: 10px;
+
+    width: 160px;
+    z-index: 2;
+
+    top: 55px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 50px 0 20px 0;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .nav-menu li {
+    padding: 5px 0;
+  }
+
+  .js [data-menu="list-ul"].open {
+    /* quando tiver a classe open vai ativar  */
+
+    display: block;
+    animation: show-top 0.3s forwards; // transicao para o transform abaixo
+  }
+}

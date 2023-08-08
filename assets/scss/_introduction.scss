@@ -1,0 +1,108 @@
+.introducao {
+  position: relative;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.introduction-content {
+  background: #000000a8;
+  color: $white;
+  position: relative;
+  width: 90%;
+  padding: 30px 10px;
+
+  @include displayFlex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.introducao-bg video {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.im-am {
+  width: 600px;
+}
+
+.im-am p {
+  @include roboto-15;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.im-am h1 {
+  @include roboto-48;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.im-am h2 {
+  @include roboto-48;
+}
+
+.im-am .text-machine {
+  font-weight: 200;
+  color: $cyan;
+}
+.im-am p:nth-child(2n) {
+  @include roboto-15;
+  font-size: 16px;
+}
+// call-to-action
+
+.call-to-action {
+  @include displayFlex;
+  align-items: baseline;
+  gap: 30px;
+}
+
+// redes sociais
+.redes-sociais a {
+  padding: 10px 10px;
+  color: $white;
+
+  border: 1px solid $cyan;
+  border-radius: 100%;
+}
+
+.redes-sociais a:hover {
+  color: $cyan;
+}
+
+.redes-sociais a:last-child {
+  margin-left: 10px;
+}
+
+.im-img img {
+  width: 300px;
+  height: 400px;
+
+  background: $cyan;
+  padding: 10px 10px 0 0;
+}
+
+//media query
+@media (max-width: 600px) {
+  .introduction-content {
+    text-align: center;
+  }
+  .introduction-content p:first-child {
+    font-size: 6px;
+    margin: 20px 0 0 0;
+  }
+  .introduction-content h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .introduction-content h2 {
+    font-size: 24px;
+    margin-top: -15px;
+  }
+
+  .call-to-action {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}

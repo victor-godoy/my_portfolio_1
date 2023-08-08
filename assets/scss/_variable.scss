@@ -1,0 +1,118 @@
+// sombras
+$shadow: rgb(2 12 27 / 10%);
+// colors
+$black: #08070b;
+$black-low-hover: #ffffff2b;
+$black-high-hover: #000000a4;
+$white: #fffffffa;
+$white-light: #e9f6fd;
+$brown: rgb(151, 151, 151);
+$brown-low: #222;
+$cyan: #00e7f9;
+$cyan-01: #53b4ec;
+$cyan-02: rgb(0, 232, 249);
+$cyan-03: rgba(0, 232, 249, 0.253);
+$blue-light: #264559;
+$brown-light: #a08383;
+
+// mixins Textos
+@mixin roboto-100 {
+  // titulo maior
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 110px;
+}
+
+@mixin roboto-48 {
+  // titulo grande
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 53px;
+}
+@mixin roboto-34 {
+  // titulo medio
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+@mixin roboto-20 {
+  // texto
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@mixin roboto-15 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+// componentes do site
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: transparent;
+
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 1px solid $cyan;
+
+  color: $cyan;
+}
+.btn:hover {
+  background: #050861;
+  color: $white;
+}
+
+// mais usados
+$maxwidth: 1000px;
+$transition-duration: 0.2s;
+$distanceTopSection: 100px;
+
+// keyframe do top to botton
+@keyframes show-top {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// padroes
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.container {
+  max-width: $maxwidth;
+}
+
+// display flex
+@mixin displayFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

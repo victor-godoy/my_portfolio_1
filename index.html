@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--icones-->
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- algumas coisas só vao funcionar se o meu Js estiver aberto   -->
+  <!-- sempre que eu quiser ativar algo somento no js vai ser preciso que o usuario tenha js caso nao sera ativado o efeito ou algo  -->
+  <script>document.documentElement.className += "js";</script>
+
+
+  <!--style css-->
+  <link rel="stylesheet" href=".//assets/scss/style.css">
+
+  <title>Victor Godoy</title>
+</head>
+
+<body>
+
+  <header id="menu-header">
+
+    <div class="container header-nav">
+      <div class="nav-logo">
+
+        <a href="./index.html">
+          <span>
+            &lt;
+          </span>
+          Victor
+          <span>
+            />
+          </span>
+        </a>
+
+      </div>
+
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav class="nav-menu js-menu">
+        <ul data-menu="list-ul" id="menu">
+          <li>
+            <a href="./index.html">Início</a>
+          </li>
+          <li>
+            <a href="#linguagens">Linguagens</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-change">
+        <!-- theme change button -->
+        <button class="change-color">
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <!--introducao-->
+  <section id="introducao" class="introducao">
+
+    <div class="introducao-bg">
+      <video playsinline muted loop autoplay>
+        <source src="./assets/video/introducao.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="introduction-content">
+
+      <div class="im-am">
+        <p>Olá, meu nome é</p>
+        <h1>Victor Godoy </h1>
+
+        <div class="text-content">
+          <h2>
+            Desenvolvedor
+            <span class="text-machine">Front-end</span>
+          </h2>
+        </div>
+
+        <p>
+          Atualmente cursando Ciência da Computação.
+          Busco aprimorar meus conhecimentos para ter um melhor desempenho.
+        </p>
+
+        <div class="call-to-action">
+
+          <a class="btn" href="./assets/cv/Cv-Victor-Godoy-Batin-da-Silva.pdf" download>Baixar CV</a>
+
+          <div class="redes-sociais">
+            <a href="https://github.com/victor-godoy" target="_blank"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/victor-godoy-a64ba6209/" target="_blank"><i class="ri-linkedin-line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="im-img">
+        <img src="./assets/img/eu.jpeg" alt="Minha foto">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- linguagens -->
+  <section id="linguagens" class="linguagens">
+    <h2>Linguagens</h2>
+
+    <div class="linguagens-bg-white">
+
+
+
+      <div class="container-linguagem">
+
+        <div class="itens-conhecimentos ">
+
+          <div class="item-icone">
+            <i class="ri-html5-line"></i>
+          </div>
+
+          <h3>HTML5</h3>
+          <p>Conhecimento sobre estrutura e seu desenvolvimento</p>
+        </div>
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <i class="ri-css3-line"></i>
+          </div>
+
+          <h3>CSS3</h3>
+          <p>Conhecimento sobre posicionamentos, estilos..</p>
+        </div>
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <span>Js</span>
+          </div>
+
+          <h3>JavaScript</h3>
+          <p>Conhecimento em variáveis,funções,<br> condicionais,objetos,arrays...</p>
+        </div>
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <span>Git</span>
+          </div>
+
+          <h3>Git</h3>
+          <p>Conhecimento em controle de versões</p>
+        </div>
+
+
+        <!-- 2 linha -->
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <i class="ri-github-line"></i>
+          </div>
+
+          <h3>GitHub</h3>
+          <p>Conhecimento em aplicações</p>
+        </div>
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <span>Bootstrap</span>
+          </div>
+
+          <h3>Bootstrap</h3>
+          <p>Conhecimento no uso do framework</p>
+        </div>
+
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <i class="ri-angularjs-line"></i>
+          </div>
+
+          <h3>Angular</h3>
+          <p>Em estudo</p>
+        </div>
+
+        <div class="itens-conhecimentos ">
+          <div class="item-icone">
+            <i class="ri-reactjs-fill"></i>
+          </div>
+
+          <h3>React</h3>
+          <p>Em estudo</p>
+        </div>
+
+        <div class="itens-conhecimentos">
+          <div class="item-icone">
+            <span>Node.js</span>
+          </div>
+
+          <h3>Node.js</h3>
+          <p>Em estudo</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- projetos -->
+  <section id="projetos" class="projetos">
+    <h2>Projetos</h2>
+
+    <div class="projeto-container " data-showProject="visible">
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/clothing.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Landing Page</h3>
+          <p class="card-text">Loja de roupas.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Florestas-e-Seus-Segredos" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/floresta-segredos.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Floresta Segredos</h3>
+          <p class="card-text">Mostrando mais sobre biomas.</p>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/landing-page-Iphone-" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/iphone.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Landing Page Iphone</h3>
+          <p class="card-text">Apresentação do Iphone</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/origamid01.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Origamid</h3>
+          <p class="card-text">Projeto Origamid</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/origamid02.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Origamid</h3>
+          <p class="card-text">Projeto Origamid</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/rockseat01.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Rockseat</h3>
+          <p class="card-text">Projeto da Rockseat</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/scrollreveal.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>ScrollReveal</h3>
+          <p class="card-text">Usando ScrollReveal</p>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <a href="https://github.com/victor-godoy/Landing-Page-Clothing" target="_blank">
+          <img class="card-img-top" src="./assets/img/projects/timeline.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h3>Timeline</h3>
+          <p class="card-text">Avanço da Tecnologia</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a class="btn" data-showProject="more">Ver Mais</a>
+
+  </section>
+
+
+
+
+  <!-- Formulario ou contato / usando api(formsubmit)-->
+  <section id="contato" class="contact">
+
+    <div class="contact-grid">
+      <p>Entre em </p>
+      <h2 class="contact-detalhe">Contato</h2>
+      <p> comigo:</p>
+
+      <form class="form" action="https://formsubmit.co/victorgodoyportfolio@gmail.com" method="POST">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome." required>
+
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" placeholder="Exemplo@.gmail.com" required>
+
+        <label for="mensagem">Mensagem</label> <br>
+        <textarea id="mensagem" placeholder="Digite sua mensagem ou deixe sua sugestão de como poderia melhorar a minha performance!" cols="40" name="mensagem" required></textarea>
+
+        <button class="btn" type="submit">Enviar</button>
+
+
+        <!-- configuracoes para envio de email -->
+        <input type="hidden" name="_subject" value="Nova Mensagem!">
+        <!--quando alguem mandar um email vai me aparecer isso como titulo-->
+
+        <input type="text" name="_honey" style="display:none">
+        <!-- para o email nao ir na caixa de span-->
+
+        <input type="hidden" name="_captcha" value="false">
+        <!-- para desabilitar o captcha depois que envio o formulario ( teste para ver se é um humano  )-->
+
+
+
+
+
+
+      </form>
+    </div>
+
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <h3>Obrigado pela atenção!</h3>
+
+    <nav class="nav-footer">
+      <ul data-menu="list-ul-footer" id="footer">
+        <li>
+          <a href="mailto:victorgodoyportfolio@gmail.com">email</a>
+        </li>
+        <li>
+          <a href="https://github.com/victor-godoy" target="_blank">github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/victor-godoy-a64ba6209/" target="_blank">linkedin</a>
+        </li>
+      </ul>
+    </nav>
+
+  </footer>
+
+
+  <script type="module" src="script.js"></script>
+  <!-- scroll reval -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</body>
+
+</html>

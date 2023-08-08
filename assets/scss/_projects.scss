@@ -1,0 +1,119 @@
+.projetos {
+  position: relative;
+  margin-top: $distanceTopSection;
+}
+
+.projetos h2 {
+  text-align: center;
+}
+
+.projetos h2::after {
+  content: "";
+
+  display: inline-block;
+
+  height: 100px;
+  width: 2px;
+  background: $black;
+
+  position: relative;
+  transform: rotate(270deg);
+
+  bottom: -40px;
+  right: -70px;
+}
+
+.projetos h2::before {
+  content: "";
+
+  display: inline-block;
+
+  height: 100px;
+  width: 2px;
+  background: $black;
+
+  position: relative;
+  transform: rotate(270deg);
+
+  bottom: -40px;
+  right: 70px;
+}
+
+// cards
+
+.card-body {
+  text-align: center;
+}
+
+.card-body h3 {
+  @include roboto-20;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.projeto-container {
+  max-width: 950px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.card {
+  width: 300px;
+  background: #d6d4d486;
+
+  margin: 7px;
+  padding: 0 0 30px 0;
+
+  border-radius: 10px 10px;
+}
+
+.card img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.projetos .btn {
+  display: flex;
+  width: 80px;
+
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+// js conteudo ( mostrar  )
+.js [data-showProject="visible"] {
+  height: 280px;
+  overflow: hidden;
+
+  transition: showDown 0.4s ease;
+}
+
+.js [data-showProject="visible"].active {
+  height: 100%;
+}
+
+// js menu btn editar
+
+// responsivo
+
+@media (max-width: 800px) {
+  .projetos {
+    padding: 0 20px;
+  }
+  .projeto-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

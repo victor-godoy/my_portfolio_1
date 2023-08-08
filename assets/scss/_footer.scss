@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+
+  background: #151417;
+
+  padding: 20px 0;
+}
+
+.footer h3 {
+  @include roboto-15;
+
+  margin: 50px 0;
+  color: $white;
+}
+
+.nav-footer ul {
+  @include displayFlex;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.nav-footer a {
+  @include roboto-15;
+  font-weight: 300;
+
+  color: #8f9ba8;
+  transition: 0.3s ease;
+}
+
+.nav-footer a:hover {
+  color: $white;
+}

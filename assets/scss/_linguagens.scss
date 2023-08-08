@@ -1,0 +1,98 @@
+.linguagens {
+  // margin-top: $distanceTopSection;
+  position: relative;
+
+  background: $black;
+}
+
+.itens-conhecimentos {
+  padding: 20px 10px;
+
+  width: 300px;
+  text-align: center;
+}
+
+.itens-conhecimentos .item-icone {
+  display: inline-block;
+
+  margin: 20px 0;
+  background: $white-light;
+  padding: 15px;
+  border-radius: 10px;
+
+  color: $cyan-01;
+}
+.itens-conhecimentos h3 {
+  color: $cyan-01;
+  margin-bottom: 10px;
+}
+
+.itens-conhecimentos p {
+  @include roboto-15;
+  font-weight: 100;
+  color: $blue-light;
+}
+
+.linguagens h2 {
+  color: $white;
+  opacity: 0.8;
+
+  @include roboto-48;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 8px;
+
+  letter-spacing: 0.5rem;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 300px;
+  left: -70px;
+}
+
+.linguagens h2:before {
+  content: "";
+  display: inline-block;
+
+  height: 100px;
+  width: 2px;
+
+  background: $white;
+  opacity: 0.8;
+
+  transform: rotate(270deg);
+  position: absolute;
+  position: absolute;
+  top: -20px;
+  left: -70px;
+}
+
+.linguagens h2:after {
+  content: "";
+  display: inline-block;
+
+  height: 100px;
+  width: 2px;
+
+  background: $white;
+  opacity: 0.8;
+
+  transform: rotate(270deg);
+  position: absolute;
+  top: -20px;
+  right: -80px;
+}
+
+// funco branco
+.linguagens-bg-white {
+  background-color: $white;
+  margin-left: 200px;
+}
+.container-linguagem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 20px;
+}

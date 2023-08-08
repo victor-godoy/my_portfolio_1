@@ -1,0 +1,102 @@
+// Menu que muda de cor ao scroll
+.menuFixo {
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease;
+}
+// fim menu que muda de cor ao scroll
+
+header {
+  background: rgba(199, 197, 197, 0.6);
+
+  position: fixed;
+  z-index: 2;
+
+  width: 100%;
+}
+
+.header-nav {
+  @include displayFlex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-logo a {
+  color: $white;
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav-logo span {
+  font-size: 16px;
+}
+
+.nav-logo span:nth-child(2) {
+  margin-right: 30px; // para deixar o meu btn mobile no centro do menu-list
+}
+
+.nav-menu ul {
+  @include displayFlex;
+}
+
+.nav-menu li {
+  padding: 0 5px;
+}
+
+.nav-menu a {
+  color: $white;
+  @include roboto-15;
+  padding: 5px 10px;
+  transition: color var($transition-duration) ease-in-out;
+}
+.nav-menu a:hover {
+  background: $black-low-hover;
+  border-radius: 10px;
+}
+
+// mudar a cor (change theme)
+.change-color {
+  background: blue;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+
+  margin-left: 30px;
+}
+
+.change-theme {
+  color: $white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+// linguagem
+.nav-language {
+  margin-right: 50px;
+}
+
+.linguage-list {
+  @include displayFlex;
+}
+.linguage-list li {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.linguage-list span {
+  color: $white;
+}
+
+.linguage-list button {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  outline: none;
+}

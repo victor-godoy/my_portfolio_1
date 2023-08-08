@@ -1,0 +1,80 @@
+// modo dark ativado
+
+body.dark-active {
+  background: $black;
+
+  a {
+    color: $white;
+  }
+
+  // introducao
+  .introduction-content {
+    background: $black;
+    opacity: 1;
+  }
+
+  // linguagens
+  .linguagens-bg-white {
+    background: #0f1116;
+    border-bottom: 1px solid aliceblue;
+  }
+  .itens-conhecimentos .item-icone {
+    color: #2fb3ff;
+  }
+
+  .itens-conhecimentos h3 {
+    color: #2fb3ff;
+  }
+  .itens-conhecimentos p {
+    color: #b5b5b5;
+  }
+
+  // projetos
+  .projetos {
+    background: #0e151f;
+    padding: 50px 0;
+  }
+  .projetos h2 {
+    color: $white;
+  }
+  .projetos h2::before,
+  .projetos h2::after {
+    background: $white;
+  }
+
+  .projetos a,
+  h3,
+  p {
+    color: $white;
+  }
+
+  .projetos .card {
+    background: #d9d1d11a;
+  }
+
+  // contato
+  .contact {
+    background: none;
+    border-top: 1px solid aliceblue;
+  }
+  .contact-grid p:before {
+    background: $white;
+  }
+
+  .contact-grid .contact-detalhe {
+    background: #00a0ff;
+  }
+
+  .form label {
+    color: $cyan;
+  }
+
+  // footer
+
+  .nav-footer a {
+    color: #ffffff9c;
+  }
+  .nav-footer a:hover {
+    color: $white;
+  }
+}
